@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ets GOOD DAV NET — Portfolio & Services Numériques</title>
+  <style>
+    :root {
+      --accent: #0b78d1;
+      --muted: #555;
+      --bg: #f6f8fb;
+    }
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #111;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    header img.logo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+    }
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    p.lead {
+      color: var(--muted);
+      margin: 6px 0 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 6px 20px rgba(20,30,50,0.06);
+      margin-bottom: 18px;
+    }
+    .profile img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background: #f0f0f0;
+    }
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      padding-left: 8px;
+    }
+    .service-list, .project-list {
+      display: grid;
+      gap: 12px;
+    }
+    .service-item, .project-item {
+      background: #f9fafc;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+    .service-item strong {
+      color: var(--accent);
+      font-size: 15px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 30px;
+    }
+    .contact p {
+      margin: 5px 0;
+      color: var(--muted);
+    }
+    .about-images {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .about-images img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #f0f0f0;
+    }
+    .about-inputs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .about-inputs input {
+      padding: 6px 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    .vertical-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 34px;
+      font-weight: bold;
+      text-align: center;
+      animation: swing 3s ease-in-out infinite, blink 2s linear infinite;
+      background: linear-gradient(90deg, blue, yellow, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 8px blue, 0 0 15px yellow, 0 0 20px red;
+    }
+    @keyframes swing {
+      0% { transform: rotate(0deg) translateX(0); }
+      25% { transform: rotate(3deg) translateX(6px); }
+      50% { transform: rotate(0deg) translateX(0); }
+      75% { transform: rotate(-3deg) translateX(-6px); }
+      100% { transform: rotate(0deg) translateX(0); }
+    }
+    @keyframes blink {
+      0%, 100% {
+        text-shadow: 0 0 8px blue, 0 0 15px yellow, 0 0 20px red;
+      }
+      25% {
+        text-shadow: 0 0 8px yellow, 0 0 15px red, 0 0 20px blue;
+      }
+      50% {
+        text-shadow: 0 0 8px red, 0 0 15px blue, 0 0 20px yellow;
+      }
+      75% {
+        text-shadow: 0 0 8px blue, 0 0 15px red, 0 0 20px yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="https://i.ibb.co/m5qFCgss/Image1.jpg" alt="logo" />
+      <div>
+        <h1>Ets GOOD DAV NET</h1>
+        <p class="lead">
+          Offrir des services informatiques professionnels : développement web & desktop, formation, maintenance et gamification pédagogique
+        </p>
+      </div>
+    </header>
+    <div class="grid">
+      <main>
+        <div class="card profile">
+          <img src="https://i.ibb.co/nqgp2Dyt/pic-0206-091601.png" alt="Profil ETAKOUANA AIME DAVID" />
+          <h2>ETAKOUANA AIME DAVID</h2>
+          <p><strong>PDG de Ets GOOD DAV NET</strong></p>
+          <p>Entrepreneur en développement numérique, spécialisé dans la programmation, la création d’applications web et mobiles, et la transformation digitale.</p>
+          <p>Toujours à l’écoute des nouvelles tendances technologiques, je m’engage à créer des projets innovants, accessibles et durables.</p>
+          <p>Maîtrise : <strong>HTML, CSS, JavaScript, Python, PHP, SQL</strong> + frameworks <strong>React, Node.js, Laravel</strong>.</p>
+        </div>
+        <div class="card">
+          <div class="section-title">Services Numériques</div>
+          <div class="service-list">
+            <div class="service-item"><strong>Gestion de Documents</strong><br>Création de modèles Word, automatisation…</div>
+            <div class="service-item"><strong>Communication et Emailing</strong><br>Newsletters, automatisation d’envois…</div>
+            <div class="service-item"><strong>Développement Web</strong><br>Sites vitrines, e-commerce, plateformes interactives.</div>
+            <div class="service-item"><strong>Développement Mobile</strong><br>Applications Android & iOS hybrides.</div>
+            <div class="service-item"><strong>Cloud & Hébergement</strong><br>Serveurs, déploiement, migration.</div>
+            <div class="service-item"><strong>Design & Multimédia</strong><br>Maquettes, infographies, vidéos.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="section-title">Projets</div>
+          <div class="project-list">
+            <div class="project-item"><strong>Plateforme de Formation</strong><br>LMS interactif.</div>
+            <div class="project-item"><strong>Application de Gestion</strong><br>Logiciel web interne.</div>
+            <div class="project-item"><strong>Site E-commerce</strong><br>Interface responsive avec paiement intégré.</div>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="card contact">
+          <div class="section-title">Contact</div>
+          <p><strong>Email :</strong> etakouana35@gmail.com</p>
+          <p><strong>Téléphone :</strong> +229 01 91 16 84 89 / 01 47 44 24 16</p>
+          <p><strong>Pays :</strong> Bénin</p>
+          <p><strong>Ville :</strong> Parakou</p>
+          <p><strong>Site web :</strong> <a href="https://ets-good-dav-net.e-monsite.com" target="_blank">https://ets-good-dav-net.e-monsite.com</a></p>
+        </div>
+        <div class="card">
+          <div class="section-title">À propos</div>
+          <p>Ce site est une vitrine numérique de <strong>Ets GOOD DAV NET</strong>. Toutes les informations sont visibles sur tous les appareils.</p>
+          <div class="about-images">
+            <img id="about-img1" src="https://i.ibb.co/Hfgw43mv/images.jpg" alt="Image 1" />
+            <img id="about-img2" src="https://i.ibb.co/prRb0BGx/images-1.jpg" alt="Image 2" />
+            <img id="about-img3" src="https://i.ibb.co/r2MWzH9s/images-2.jpg" alt="Image 3" />
+            <img id="about-img4" src="https://i.ibb.co/S40QzHLJ/images-3.jpg" alt="Image 4" />
+          </div>
+          <div class="about-inputs">
+            <input type="text" placeholder="URL image 1" oninput="saveImage('about-img1', this.value)" />
+            <input type="text" placeholder="URL image 2" oninput="saveImage('about-img2', this.value)" />
+            <input type="text" placeholder="URL image 3" oninput="saveImage('about-img3', this.value)" />
+            <input type="text" placeholder="URL image 4" oninput="saveImage('about-img4', this.value)" />
+          </div>
+          <div class="vertical-container">
+            <div class="vertical-text">ETS GOOD</div>
+            <div class="vertical-text">DAV NET</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <small>© <span id="year"></span> Ets GOOD DAV NET — Tous droits réservés</small>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const ids = ["about-img1", "about-img2", "about-img3", "about-img4"];
+    ids.forEach(id => {
+      const saved = localStorage.getItem(id);
+      if (saved) document.getElementById(id).src = saved;
+    });
+    function saveImage(id, url) {
+      document.getElementById(id).src = url;
+      localStorage.setItem(id, url);
+    }
+  </script>
+</body>
+</html>
